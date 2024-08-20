@@ -1,0 +1,25 @@
+body{
+    background-color: blue;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#form{
+    width: 400px;
+    margin: 20vh auto 0 auto;
+    background-color: azure;
+    border-radius: 5px;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    color: brown;
+}
+.input{
+    display:flex ;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+#formbutton{
+    background-color: aquamarine;
+}
