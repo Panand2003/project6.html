@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="lenconverter.css">
+</head>
+<body>
+    <center>
+    <div id="conversion">
+        <h2>Convert Meters to Kilometers</h2>    
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="Meters">
+        </div>
+        <div>
+            <button type="submit" onclick="converter()">Convert to KM</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    </center>
+</body>
+<script>
+    function converter() {
+        const givenvalue = Number(document.getElementById('input').value);
+        const km = givenvalue / 1000;
+        const result = document.getElementById('result');
+        result.innerHTML = km.toFixed(3) + " Kilometers";
+    }
+</script>
+</html>
